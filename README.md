@@ -1,6 +1,7 @@
 # Learn-React
 
-- eslint
+- use `eslint`
     - airbnb
     - config WebStorm to turn eslint on
-- index.js
+- create `index.js`
+- install `react`, `react-dom`
