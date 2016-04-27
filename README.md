@@ -7,3 +7,5 @@
     - create `index.js`
     - install `react`, `react-dom`
     - config WebStorm to set JavaScript language version as `JSX Harmony`
+- use `babel`
+    - airbnb
