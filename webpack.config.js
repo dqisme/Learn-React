@@ -3,7 +3,7 @@ var webpackConfig = {
   entry: "./src/index.js",
   output: {
     path: "./build/",
-    filename: "bundle.js"
+    filename: "index.js"
   },
   module: {
     loaders: [
