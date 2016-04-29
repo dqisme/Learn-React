@@ -1,9 +1,11 @@
-var config = require('./config/config');
+var webpack = require('webpack');
+var config = require('./config');
+var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpackConfig = {
-  entry: "./src/index.js",
+  entry: path.join(config.path.src, "index.js"),
   output: {
-    path: "./build/",
+    path: config.path.build,
     filename: "index.js"
   },
   module: {

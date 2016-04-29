@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import config from '../config/config';
+import config from '../config';
 
 function App() {
   return (
