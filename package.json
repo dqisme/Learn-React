@@ -11,6 +11,7 @@
     "babel-core": "^6.7.7",
     "babel-loader": "^6.2.4",
     "babel-preset-airbnb": "^1.1.1",
+    "babel-register": "^6.7.2",
     "chai": "^3.5.0",
     "eslint": "^2.8.0",
     "eslint-config-airbnb": "^8.0.0",
@@ -25,7 +26,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --compilers js:babel-register",
     "start": "webpack-dev-server --inline --hot -d --port 3000",
     "build": "webpack --optimize-minimize --optimize-dedupe --progress",
     "lint": "eslint ."

@@ -12,3 +12,7 @@
 - use `webpack`
     - webpack-dev-server
         - `./node_modules/.bin/webpack-dev-server --port 3000 --inline --hot -d`
+- start testing
+    - use `mocha`
+    - use `chai`
+    - use `babel-register` for es6 testing file
