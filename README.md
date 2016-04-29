@@ -9,3 +9,6 @@
     - config WebStorm to set JavaScript language version as `JSX Harmony`
 - use `babel`
     - airbnb
+- use `webpack`
+    - webpack-dev-server
+        - `./node_modules/.bin/webpack-dev-server --port 3000 --inline --hot -d`
