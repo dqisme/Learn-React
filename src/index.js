@@ -11,4 +11,3 @@ function App() {
 }
 
 ReactDOM.render(<App />, document.getElementById(config.appMountId));
-
