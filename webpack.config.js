@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var config = require('./config/config');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpackConfig = {
   entry: "./src/index.js",
@@ -15,7 +16,7 @@ var webpackConfig = {
     new HtmlWebpackPlugin({
       inject: false,
       template: 'node_modules/html-webpack-template/index.ejs',
-      appMountId: 'app',
+      appMountId: config.appMountId,
       baseHref: '',
       devServer: 3000,
       mobile: true,
