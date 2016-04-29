@@ -14,8 +14,7 @@ var webpackConfig = {
     ]
   },
   devServer: {
-    contentBase: config.path.build,
-    port: 3000
+    contentBase: config.path.build
   },
   plugins: [
     new HtmlWebpackPlugin({
