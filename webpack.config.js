@@ -1,4 +1,3 @@
-var webpack = require('webpack');
 var config = require('./config/config');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpackConfig = {
@@ -22,9 +21,7 @@ var webpackConfig = {
       mobile: true,
       window: {
       }
-    }),
-    new webpack.optimize.UglifyJsPlugin(),
-    new webpack.optimize.DedupePlugin()
+    })
   ]
 };
 
