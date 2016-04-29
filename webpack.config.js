@@ -13,6 +13,10 @@ var webpackConfig = {
       { test:/\.js$/, exclude: /node_modules/, loader: "babel-loader"}
     ]
   },
+  devServer: {
+    contentBase: config.path.build,
+    port: 3000
+  },
   plugins: [
     new HtmlWebpackPlugin({
       inject: false,
