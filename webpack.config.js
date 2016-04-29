@@ -18,11 +18,16 @@ var webpackConfig = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      hash: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      },
+      //html-webpack-template-config
       inject: false,
       template: 'node_modules/html-webpack-template/index.ejs',
       appMountId: config.appMountId,
       baseHref: '',
-      devServer: 3000,
       mobile: true,
       window: {
       }
