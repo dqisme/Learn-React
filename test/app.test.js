@@ -1,5 +1,3 @@
-import React from 'react';
-import { expect } from 'chai';
 import { mount, render, shallow } from 'enzyme';
 import App from '../src/app';
 
