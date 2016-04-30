@@ -14,5 +14,10 @@
         - `./node_modules/.bin/webpack-dev-server --port 3000 --inline --hot -d`
 - start testing
     - use `mocha`
+        - create `test/`
     - use `chai`
     - use `babel-register` for es6 testing file
+    - test react
+        - use `jsdom`
+        - use `react-addons-test-utils`
+        - use `enzyme`
