@@ -22,3 +22,4 @@
         - use `react-addons-test-utils`
         - use `enzyme`
         - use `chai-enzyme`
+        - use `istanbul`
