@@ -30,7 +30,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-register",
+    "test": "mocha",
     "start": "webpack-dev-server --inline --hot -d --port 3000",
     "build": "webpack --optimize-minimize --optimize-dedupe --progress",
     "lint": "eslint ."
