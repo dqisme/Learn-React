@@ -23,6 +23,7 @@
     "eslint-plugin-react": "^5.0.1",
     "html-webpack-plugin": "^2.16.0",
     "html-webpack-template": "^4.0.0",
+    "istanbul": "^1.0.0-alpha.2",
     "jsdom": "^8.4.1",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^15.0.1",
@@ -30,7 +31,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "istanbul cover _mocha && istanbul check-coverage && echo \"SUCCESS!\" || echo \"FAIL!\"",
     "start": "webpack-dev-server --inline --hot -d --port 3000",
     "build": "webpack --optimize-minimize --optimize-dedupe --progress",
     "lint": "eslint ."
