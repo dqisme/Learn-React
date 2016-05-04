@@ -23,3 +23,7 @@
         - use `enzyme`
         - use `chai-enzyme`
         - use `istanbul`
+- use style library
+    - use `style-loader`
+    - use `css-loader`
+    - use `skeleton`

@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var config = require('./config');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpackConfig = {
   entry: path.join(config.path.src, "index.js"),
   output: {
@@ -14,6 +15,10 @@ var webpackConfig = {
         test:/\.js$/,
         exclude: /node_modules/,
         loaders: ["babel-loader", "eslint-loader"]
+      },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style-loader','css-loader')
       }
     ]
   },
@@ -35,7 +40,8 @@ var webpackConfig = {
       mobile: true,
       window: {
       }
-    })
+    }),
+    new ExtractTextPlugin("style.css")
   ]
 };
 
