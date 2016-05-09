@@ -1,5 +1,5 @@
 import { mount, render, shallow } from 'enzyme';
-import App from '../src/app';
+import App from '../src/components/app';
 
 describe('test App', () => {
   it('exists', () => {
